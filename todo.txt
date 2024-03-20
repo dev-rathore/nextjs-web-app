@@ -1,0 +1,3 @@
+- Fix bugs
+- Implement forgot password flow
+- Improve UI
