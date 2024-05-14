@@ -1,0 +1,33 @@
+/signup page
+- User enters username, email, and password
+- If user already exists with the email then throw error
+- If user does not exists with the email then create a new user in the database
+- On successful user creation, redirect user to login page on the frontend
+
+/login page
+- User enters email and password
+- If user does not exists with the email then throw error
+- If user exists with the email then create a user access token
+- On successful user verification and access token creation, redirect user to the profile page on the frontend
+
+/profile page
+- On clicking Get User button, user can get user's email id
+
+logout feature
+- On clicking Logout button, user can logout and after successful logout, user redirects to login
+
+middleware setup for public and protected pages
+
+mailtrap is used to send emails to the user
+
+user/email verification feature
+- Either user gets a verification email after login or signup or user can get a verify email feature
+- User receives a email with a verification link
+- User clicks on the link and user gets verified
+- In the backend, user is verified with the access token and isVerified field is set to true
+
+forgot password feature
+- User can get a forgot password feature
+- User receives a email with a reset password link
+- User clicks on the link and redirects to a page where user enters new password and confirm new password
+- User sends data to the backend and user is verified with the access token and user's password is updated
